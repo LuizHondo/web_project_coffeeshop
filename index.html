@@ -28,10 +28,10 @@
           />
           <ul class="nav__links">
             <li class="nav__link">
-              <a href="#section-recipes">Receitas</a>
+              <a href="#recipes">Receitas</a>
             </li>
             <li class="nav__link">
-              <a href="#section-reservations">Reservar uma mesa</a>
+              <a href="#reservation">Reservar uma mesa</a>
             </li>
             <li class="nav__link"><a href="#">Contatos</a></li>
           </ul>
@@ -64,7 +64,7 @@
         </div>
       </header>
       <main class="content">
-        <section class="recipes" id="section-recipes">
+        <section class="recipes" id="recipes">
           <h2 class="recipes__title">Receitas</h2>
           <p class="recipes__subtitle">
             Confira algumas receitas que coletamos para <br />
@@ -101,9 +101,67 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="section-reservation"></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar uma mesa</h2>
+          <form class="reservation__form">
+            <fieldset class="form__fieldset">
+              <label for="name" class="form__label">Nome *</label>
+              <input
+                type="text"
+                class="form__input"
+                id="name"
+                placeholder="Nome"
+                required
+              />
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <label for="numero-convidados" class="form__label"
+                >Número de convidados *</label
+              >
+              <input
+                type="number"
+                class="form__input"
+                id="numero-convidados"
+                placeholder="1-8"
+                required
+              />
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <label for="data-e-hora" class="form__label">Data e hora *</label>
+              <input
+                type="datetime-local"
+                class="form__input"
+                id="data-e-hora"
+                placeholder="1-8"
+                min="1"
+                max="8"
+                required
+              />
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <label for="seu-email" class="form__label">Seu e-mail *</label>
+              <input
+                type="email"
+                class="form__input"
+                id="seu-email"
+                placeholder="email@email.com"
+                required
+              />
+            </fieldset>
+            <button type="submit" class="form__button">
+              Reservar uma mesa
+            </button>
+
+
+            <label for="termos-de-uso" class="form__label">
+              <input type="checkbox" id="termos-de-uso" class="form__checkbox" required>
+              </input>
+              Eu concordo com os termos de uso
+            </label>
+          </form>
+        </section>
       </main>
-      <footer class="footer" id="section-footer"></footer>
+      <footer class="footer" id="footer"></footer>
     </div>
   </body>
 </html>
